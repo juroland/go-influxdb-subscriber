@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  influxdb:
+    image: influxdb:1.3.5
+  subscriber:
+    image: subscriber:0.0.1
