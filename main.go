@@ -33,5 +33,5 @@ func writePointsHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	fmt.Println("subscriber started")
 	http.HandleFunc("/write", writePointsHandler)
-	log.Fatal(http.ListenAndServe(":5000", nil))
+	log.Fatal(http.ListenAndServe(Config.Address, nil))
 }

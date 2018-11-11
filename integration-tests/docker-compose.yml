@@ -5,3 +5,5 @@ services:
     image: influxdb:1.3.5
   subscriber:
     image: subscriber:0.0.1
+    environment:
+      SUBSCRIBER_ADDRESS: "subscriber:5000"
